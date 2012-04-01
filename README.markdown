@@ -5,12 +5,12 @@
 Overview
 --------
 The Loop-o-matic is an interactive musical “instrument” inspired from a
-design by David Wessel ([Video
-Reference](http://www.youtube.com/watch?v=q_mtCZqN0Ms)). The instrument
-generates MIDI notes that repeat, with interactive control over the
+design by David Wessel ([video
+reference](http://www.youtube.com/watch?v=q_mtCZqN0Ms)). The instrument
+generates MIDI notes that repeat with interactive control over the
 repetition rate, pitch, velocity, duration, channel, and program. Unlike
 most drum machines, this program allows various drums or notes to play
-at different rates, creating interesting musical patterns and textures.
+at different rates to create interesting musical patterns and textures.
 
 Running the Program
 -------------------
@@ -27,13 +27,13 @@ the horizontal position of the small circle in the box, and the other
 voice follows the controls to the left of the box and the vertical
 position of the small circle. These controls specify the duration (1-8),
 channel (1-16), pitch (0-127), and velocity (1-127) of the note, and
-there is an on/off switch that enables or mutes the voice. In addition,
+there is an On/Off switch that enables or mutes the voice. In addition,
 the “tempo” or inter-note onset (IOI) time of the voice is controlled by
 the position of the small drag-able circle in the box. The relative
 position of the circle specifies the repetition rate of the note from
 0.5Hz to 5Hz (30 to 300BPM).
 
-There is a separate control for MIDI Program, shown on the left of the image.
+there is a separate control for MIDI Program, shown on the left of the image.
 
 It should be noted that the program uses the current default MIDI synth.
 If no sounds are being made after starting a voice, it may be that the
@@ -62,4 +62,7 @@ expressed as a fraction of full-scale, is x, then the tempo is 30 * 10^x
 
 Implementation
 --------------
-This is implemented with a single scheduler using a heap-based priority queue with precise timing for all 8 voices.  The scheduler polls for work every 2 milliseconds within the same thread handling the graphical interface.
+This is implemented with a single scheduler using a heap-based priority
+queue with precise timing for all 8 voices.  The scheduler polls for
+work every 2 milliseconds within the same thread handling the graphical
+interface.
