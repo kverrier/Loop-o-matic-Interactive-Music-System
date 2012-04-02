@@ -33,10 +33,10 @@ the position of the small drag-able circle in the box. The relative
 position of the circle specifies the repetition rate of the note from
 0.5Hz to 5Hz (30 to 300BPM).
 
-there is a separate control for MIDI Program, shown on the left of the image.
+There is a separate control for MIDI Program, shown on the left of the image.
 
 It should be noted that the program uses the current default MIDI synth.
-If no sounds are being made after starting a voice, it may be that the
+If no sounds are being made after starting a voice, it might be that the
 MIDI device is not capable of making sound through the Java protocol. To
 avoid this issue, I recommend using
 [SimpleSynth](http://notahat.com/simplesynth). In addition to
