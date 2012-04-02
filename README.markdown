@@ -20,7 +20,7 @@ After running the jar file, a window will appear resembling this:
 
 ![start-up](http://i.imgur.com/RHC14.png)
 
-There are 8 voices, where each voice plays a note over and over again.
+There are 8 voices, each capable of playing a note over and over again.
 The parameters of the note are given by the interface. Each large square
 represents two voices. One voice follows the controls below the box and
 the horizontal position of the small circle in the box, and the other
